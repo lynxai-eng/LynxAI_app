@@ -12,7 +12,7 @@ AI model described in the provided information is designed to solve challenges r
 ## LynxAI's Solution
 AI model described in the provided information is designed to solve challenges related to testing and verifying complex hardware IPs by creating a virtual representation that replicates their behavior accurately, simplifies testing, and assists in output validation. It aims to streamline the hardware development and verification process, making it more efficient and reliable.
 
-[si_twin](https://github.com/lynxai-eng/si_twin/blob/main/silicon_twin_demo.pdf)
+[LynxAI_app](https://github.com/lynxai-eng/si_twin/blob/main/silicon_twin_demo.pdf)
 ## Installation
 - Python3.9 required
 - This is a Linux release of LynxAI app. Please contact LynxAI for other OS support at support@lynxai.io
@@ -25,7 +25,7 @@ clone repository
 
 install packages 
 ```bash
-    cd si_twin
+    cd LynxAI_app
     pip install -r requirements.txt
 ```
 
@@ -39,7 +39,22 @@ Input file Example
 ```bash
     python3 LynxAI_app.py 
 ```
-- si_twin app interface 
+- LynxAI_app  interface 
+seclect one option:
+1. Training (requried email verification )
+2. Si_twin
+
+![alt text](https://github.com/lynxai-eng/LynxAI_app/blob/main/example/1_1.png)
+- If you seclect  
+Configer Model 
+
+1. where you want to create model 
+2. signal file (to understand what is signal file are please look at /example/signal)
+3. vcd file path 
+you can browse file using "Browse" button
+![alt text](https://github.com/lynxai-eng/LynxAI_app/blob/main/example/1_2.png)
+![alt text](https://github.com/lynxai-eng/LynxAI_app/blob/main/example/1_3.png)
+-If you seclect Si_twin 
 
 ![alt text](https://github.com/lynxai-eng/si_twin/blob/main/1.png)
 - The GUI displays the result of the model. 
