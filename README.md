@@ -10,7 +10,7 @@ Common AI workflow has a model generation for training and a model inference for
 
 ## LynxAI's Solution
 Our solution is targeted towards accelerating hardware development.  The LynxAI_app has the model training and model inference (si_twin) integrated into one App.
-The app is build on the foundation that enables the user to have full control on the training data.
+The app is build on the foundation that enables the user to have full control on the training data and deployment of the model.
 
 [LynxAI_app](https://github.com/lynxai-eng/LynxAI_app/blob/main/LynxAI_App.pdf)
 ## Installation
