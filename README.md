@@ -6,14 +6,13 @@ Connect us at support@lynxai.io
 
 
 ## Introduction
-Common AI workflow has a model generation for training a model and a model inference for deploying the model. The model generation requires GPU for faster execution.
-
+Common AI workflow has a model generation for training and a model inference for deploying the model. The model generation requires GPU for faster execution.
 
 ## LynxAI's Solution
 Our solution is targeted towards accelerating hardware development.  The LynxAI_app has the model training and model inference (si_twin) integrated into one App.
 The app is build on the foundation that enables the user to have full control on the training data.
 
-[LynxAI_app](https://github.com/lynxai-eng/si_twin/blob/main/silicon_twin_demo.pdf)
+[LynxAI_app](https://github.com/lynxai-eng/LynxAI_app/blob/main/LynxAI_App.pdf)
 ## Installation
 - Python3.9 required
 - This is a Linux release of LynxAI app. Please contact LynxAI for other OS support at support@lynxai.io
@@ -41,7 +40,7 @@ Input file Example
     python3 LynxAI_app.py 
 ```
 ## LynxAI_app  interface 
-- seclect one option:
+- Select one of the options:
 1. Training (requried email verification )
 2. Si_twin
 
@@ -49,7 +48,7 @@ Input file Example
 ### If you seclect "Training"   
 
 - You need to provide following information:
-1) Folder to create model
+1) Folder to create/save the model
 2) File containing list of signals (please refer to /example/signal for more details)
 3) Location (path) of the VCD file
 
