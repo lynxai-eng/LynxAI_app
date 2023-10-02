@@ -1,0 +1,17 @@
+input           tx_axis_tvalid
+input           tx_axis_tlast
+input    [7:0]       tx_axis_tkeep
+input    [63:0]       tx_axis_tdata   
+input    [63:0]       tx_axis_tuser
+input           tx_rst
+input    [95:0]       tx_ptp_time
+input    [95:0]       tx_ptp_ts
+
+
+output          rx_rst
+
+output   [63:0]       rx_axis_tdata
+output   [7:0]       rx_axis_tkeep
+output   [96:0]       rx_axis_tlast
+output          rx_axis_tvalid
+output   [95:0]       rx_ptp_time

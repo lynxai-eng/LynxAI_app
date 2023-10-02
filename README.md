@@ -29,7 +29,7 @@ install packages
     pip install -r requirements.txt
 ```
 
-## Usage/Examples
+# Usage/Examples
 
 Input file Example
 
@@ -39,22 +39,22 @@ Input file Example
 ```bash
     python3 LynxAI_app.py 
 ```
-- LynxAI_app  interface 
-seclect one option:
+## LynxAI_app  interface 
+- seclect one option:
 1. Training (requried email verification )
 2. Si_twin
 
 ![alt text](https://github.com/lynxai-eng/LynxAI_app/blob/main/example/1_1.png)
-- If you seclect  
-Configer Model 
+### If you seclect "Training"   
 
-1. where you want to create model 
-2. signal file (to understand what is signal file are please look at /example/signal)
-3. vcd file path 
-you can browse file using "Browse" button
+- You need to provide following information:
+1) Folder to create model
+2) File containing list of signals (please refer to /example/signal for more details)
+3) Location (path) of the VCD file
+
 ![alt text](https://github.com/lynxai-eng/LynxAI_app/blob/main/example/1_2.png)
 ![alt text](https://github.com/lynxai-eng/LynxAI_app/blob/main/example/1_3.png)
--If you seclect Si_twin 
+### If you seclect "Si_twin" 
 
 ![alt text](https://github.com/lynxai-eng/si_twin/blob/main/1.png)
 - The GUI displays the result of the model. 
