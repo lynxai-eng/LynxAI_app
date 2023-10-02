@@ -6,11 +6,12 @@ Connect us at support@lynxai.io
 
 
 ## Introduction
-The main objective of this example is to demonstrate the standalone functionality of the silicon twin. It utilizes test data included in the release and provides output in the form of a waveform (VCD) along with a graphical user interface (GUI) that illustrates the accuracy of the model's output compared to the training dataset."
-AI model described in the provided information is designed to solve challenges related to testing and verifying complex hardware IPs by creating a virtual representation that replicates their behavior accurately, simplifies testing, and assists in output validation. It aims to streamline the hardware development and verification process, making it more efficient and reliable.
+Common AI workflow has a model generation for training a model and a model inference for deploying the model. The model generation requires GPU for faster execution.
+
 
 ## LynxAI's Solution
-AI model described in the provided information is designed to solve challenges related to testing and verifying complex hardware IPs by creating a virtual representation that replicates their behavior accurately, simplifies testing, and assists in output validation. It aims to streamline the hardware development and verification process, making it more efficient and reliable.
+Our solution is targeted towards accelerating hardware development.  The LynxAI_app has the model training and model inference (si_twin) integrated into one App.
+The app is build on the foundation that enables the user to have full control on the training data.
 
 [LynxAI_app](https://github.com/lynxai-eng/si_twin/blob/main/silicon_twin_demo.pdf)
 ## Installation
@@ -55,8 +56,13 @@ Input file Example
 ![alt text](https://github.com/lynxai-eng/LynxAI_app/blob/main/example/1_2.png)
 ![alt text](https://github.com/lynxai-eng/LynxAI_app/blob/main/example/1_3.png)
 ### If you seclect "Si_twin" 
+- You need to provide following information:
+1. "model list" (created in the model folder)
+2. The location (path) of the test VCD file
+3. File containing list of signals (please refer to /example/signal for more details)
 
 ![alt text](https://github.com/lynxai-eng/si_twin/blob/main/1.png)
+
 - The GUI displays the result of the model. 
 1. The top left window shows the accuracy of the model output against the anticipated output from the Ethernet MAC API. 
 2. The Top right displays the failing signals, on a scale of 0 to 1, with 1 being 100% match. For example a signal that is 0.8 indicates  80% success.
